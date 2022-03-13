@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class recommendation extends StatefulWidget {
+class Recommendation extends StatefulWidget {
   final String name;
   final String location;
   final String image;
 
-  const recommendation(
+  const Recommendation(
       {Key? key,
       required this.name,
       required this.location,
@@ -13,12 +13,12 @@ class recommendation extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<recommendation> createState() => _recommendationState();
+  State<Recommendation> createState() => _RecommendationState();
 }
 
 const data = "TEST";
 
-class _recommendationState extends State<recommendation> {
+class _RecommendationState extends State<Recommendation> {
   @override
   Widget build(BuildContext context) {
     return Padding(

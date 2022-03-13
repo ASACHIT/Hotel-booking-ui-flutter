@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hotelbooking/pages/widgets/hotels.dart';
-import 'package:hotelbooking/pages/widgets/recommendation.dart';
+import 'package:hotelbooking/pages/widgets/Recommendation.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
 
-    var Safearea = MediaQuery.of(context).padding.top;
+    var safearea = MediaQuery.of(context).padding.top;
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 237, 245, 252),
         body: SingleChildScrollView(
@@ -22,7 +22,7 @@ class _DashboardState extends State<Dashboard> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: Safearea,
+                height: safearea,
               ),
               SizedBox(
                 height: 60,
